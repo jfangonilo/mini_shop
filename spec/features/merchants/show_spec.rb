@@ -1,7 +1,7 @@
 require "rails_helper"
 
-describe "merchant index" do
-  before :each do
+describe "merchant show" do
+   before :each do
     @merchant_1 = Merchant.create!(
       name:     "Bentgate Mountaineering",
       address:  "1313 Washington Ave",
@@ -24,12 +24,14 @@ describe "merchant index" do
       zip:      "80305"
     )
 
-    visit "/merchants"
-  end
+    visit "/merchants/#{@merchant_1.id}"
+   end
 
-  it "shows the list of merchant names" do
+   it "shows all merchant attributes" do
     expect(page).to have_content @merchant_1.name
-    expect(page).to have_content @merchant_2.name
-    expect(page).to have_content @merchant_3.name
-  end
+    expect(page).to have_content @merchant_1.address
+    expect(page).to have_content @merchant_1.city
+    expect(page).to have_content @merchant_1.state
+    expect(page).to have_content @merchant_1.zip
+   end
 end

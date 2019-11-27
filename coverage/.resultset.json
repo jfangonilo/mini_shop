@@ -181,6 +181,7 @@
       "/Users/jomahfangonilo/turing/2module/practice/mini_shop/config/routes.rb": [
         1,
         1,
+        1,
         null,
         null
       ],
@@ -201,6 +202,10 @@
       "/Users/jomahfangonilo/turing/2module/practice/mini_shop/app/controllers/merchants_controller.rb": [
         1,
         1,
+        0,
+        null,
+        null,
+        1,
         1,
         null,
         null
@@ -211,6 +216,6 @@
         null
       ]
     },
-    "timestamp": 1574834396
+    "timestamp": 1574835144
   }
 }
