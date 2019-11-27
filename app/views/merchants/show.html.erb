@@ -1,5 +1,7 @@
-<%= @merchant.name %>
-<%= @merchant.address %>
-<%= @merchant.city %>
-<%= @merchant.state %>
-<%= @merchant.zip %>
+<%= @merchant.name %><br>
+<%= @merchant.address %><br>
+<%= @merchant.city %><br>
+<%= @merchant.state %><br>
+<%= @merchant.zip %><br>
+
+<%= link_to "Update", "/merchants/#{@merchant.id}/edit"%>

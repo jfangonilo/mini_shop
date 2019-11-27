@@ -9,20 +9,6 @@ describe "merchant show" do
       state:    "CO",
       zip:      "80401"
     )
-    @merchant_2 = Merchant.create!(
-      name:     "Wilderness Exchange",
-      address:  "2401 15th St #100",
-      city:     "Denver",
-      state:    "CO",
-      zip:      "80202"
-    )
-    @merchant_3 = Merchant.create!(
-      name:     "Neptune Mountaineering",
-      address:  "633 S Broadway",
-      city:     "Boulder",
-      state:    "CO",
-      zip:      "80305"
-    )
 
     visit "/merchants/#{@merchant_1.id}"
    end
@@ -33,5 +19,10 @@ describe "merchant show" do
     expect(page).to have_content @merchant_1.city
     expect(page).to have_content @merchant_1.state
     expect(page).to have_content @merchant_1.zip
+   end
+
+   it "has a link to update the merchant" do
+    click_link "Update"
+    expect(current_path).to eq "/merchants/#{@merchant_1.id}/edit"
    end
 end
