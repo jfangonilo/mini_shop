@@ -182,10 +182,43 @@
         1,
         1,
         1,
+        1,
+        1,
         null,
         null
       ],
       "/Users/jomahfangonilo/turing/2module/practice/mini_shop/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/jomahfangonilo/turing/2module/practice/mini_shop/app/controllers/merchants_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/jomahfangonilo/turing/2module/practice/mini_shop/app/controllers/application_controller.rb": [
+        1,
         1,
         null
       ],
@@ -198,24 +231,8 @@
         1,
         1,
         null
-      ],
-      "/Users/jomahfangonilo/turing/2module/practice/mini_shop/app/controllers/merchants_controller.rb": [
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/jomahfangonilo/turing/2module/practice/mini_shop/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1574835144
+    "timestamp": 1574877701
   }
 }

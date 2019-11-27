@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "merchant show" do
-   before :each do
+  before :each do
     @merchant_1 = Merchant.create!(
       name:     "Bentgate Mountaineering",
       address:  "1313 Washington Ave",

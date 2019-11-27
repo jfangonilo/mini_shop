@@ -32,4 +32,10 @@ describe "merchant index" do
     expect(page).to have_content @merchant_2.name
     expect(page).to have_content @merchant_3.name
   end
+
+  it "has a link to create a new merchant" do
+    click_link "New Merchant"
+
+    expect(current_path).to eq "/merchants/new"
+  end
 end
