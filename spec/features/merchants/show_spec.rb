@@ -25,4 +25,10 @@ describe "merchant show" do
     click_link "Update"
     expect(current_path).to eq "/merchants/#{@merchant_1.id}/edit"
    end
+
+   it "has a link to delete the merchant" do
+    click_link "Delete"
+    expect(current_path).to eq "/merchants"
+    expect(page).to_not have_content @merchant_1.name
+   end
 end
