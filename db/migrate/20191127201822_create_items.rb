@@ -7,6 +7,8 @@ class CreateItems < ActiveRecord::Migration[5.1]
       t.string :description
       t.string :image
       t.integer :inventory
+      
+      t.timestamps
     end
   end
 end
