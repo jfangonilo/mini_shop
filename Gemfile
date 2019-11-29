@@ -38,7 +38,9 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'shoulda-matchers'
-  gem "nyan-cat-formatter"
+  gem 'nyan-cat-formatter'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :development do
@@ -46,7 +48,6 @@ group :development do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
-  gem 'pry'
   gem 'simplecov'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
