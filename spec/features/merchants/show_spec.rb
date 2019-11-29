@@ -2,13 +2,7 @@ require "rails_helper"
 
 describe "merchant show" do
   before :each do
-    @merchant_1 = Merchant.create!(
-      name:     "Bentgate Mountaineering",
-      address:  "1313 Washington Ave",
-      city:     "Golden",
-      state:    "CO",
-      zip:      "80401"
-    )
+    @merchant_1 = create(:random_merchant)
 
     visit "/merchants/#{@merchant_1.id}"
    end
