@@ -1,5 +1,9 @@
 class ItemsController < ApplicationController
   def index
-    @items = Item.all    
+    if @merchant
+      @items = @merchant.items
+    else
+      @items = Item.all
+    end
   end
 end

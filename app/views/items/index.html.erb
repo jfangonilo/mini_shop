@@ -1,7 +1,14 @@
-<%= @items.each do |item| %>
-  <%= item.name %>
-  <%= item.price %>
-  <%= item.description %>
-  <%= image_tag item.image %>
-  <%= item.inventory %>
+<% @items.each do |item| %>
+ <section id="item-<%= item.id %>">
+    <%= item.name %><br>
+    <%= item.price %><br>
+    <%= item.description %><br>
+    <%= image_tag item.image %><br>
+    <% if item.active? %>
+      Active
+    <% else %>
+      Inactive
+    <% end %><br>
+    <%= item.inventory %><br>
+  </section>
 <% end %>
