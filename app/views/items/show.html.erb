@@ -1,0 +1,11 @@
+<%= @item.name %><br>
+<%= @item.price %><br>
+<%= @item.description %><br>
+<%= image_tag @item.image %><br>
+<%= @item.inventory %><br>
+<% if @item.active %>
+  Active
+<% else %>
+  Inactive
+<% end %><br>
+<%= @item.merchant.name %><br>

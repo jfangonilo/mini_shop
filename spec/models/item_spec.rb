@@ -3,7 +3,6 @@ require "rails_helper"
 describe Item do
   before :each do
     @item_1 = create(:random_item)
-    binding.pry
   end
 
   describe "validations" do
