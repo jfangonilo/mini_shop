@@ -17,4 +17,9 @@ describe "item show page" do
     expect(page).to have_content @item.merchant.name
   end
 
+  it "has a link to update that item" do
+    click_link "Update"
+
+    expect(current_path).to eq "/items/#{@item.id}/edit"
+  end
 end
