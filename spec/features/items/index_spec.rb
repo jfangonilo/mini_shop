@@ -7,7 +7,6 @@ describe "items index page" do
     @merchant_1_items = create_list(:random_item, 3, merchant: merchants[0])
     @merchant_2_items = create_list(:random_item, 3, merchant: merchants[1])
     @merchant_3_items = create_list(:random_item, 3, merchant: merchants[2])
-    binding.pry
     
     visit "/items"
   end

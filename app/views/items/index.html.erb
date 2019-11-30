@@ -1,3 +1,7 @@
+<% if @merchant %>
+  <%= link_to "New Item", "/merchants/#{@merchant.id}/items/new"%>
+<% end %>
+
 <% @items.each do |item| %>
  <section id="item-<%= item.id %>">
     <%= item.name %><br>

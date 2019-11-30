@@ -2,9 +2,9 @@ require "rails_helper"
 
 describe "items index page" do
   before :each do
-    merchant_1 = create(:random_merchant)
-    @items = create_list(:random_item, 3, merchant: merchant_1)
-    visit "/merchants/#{merchant_1.id}/items"
+    @merchant_1 = create(:random_merchant)
+    @items = create_list(:random_item, 3, merchant: @merchant_1)
+    visit "/merchants/#{@merchant_1.id}/items"
   end
 
   it "shows all the items for that merchant" do
@@ -34,5 +34,10 @@ describe "items index page" do
       expect(page).to have_content "Active"
       expect(page).to have_content @items[2].inventory
     end
+  end
+
+  it "has a link to add a new item" do
+    click_link "New Item"
+    expect(current_path).to eq "/merchants/#{@merchant_1.id}/items/new"
   end
 end
